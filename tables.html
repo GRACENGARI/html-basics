@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--color,thickness,line-->
+<!--    id one element class assign many-->
+    <style>
+        /* Styling for the table */
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /Styling for table header and data cells/
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: mediumseagreen;
+            color: white;
+        }
+        tr:nth-child(3) {
+            font-weight: bold;
+            color: mediumseagreen;
+        }
+        tr:nth-child(even) {
+            background-color: white;
+        }
+        /* Highlight second row */
+        tr:nth-child(3) {
+            background-color: lightgray;
+        }
+        td:nth-child(1), td:nth-child(3), td:nth-child(4) {
+            text-align: center;
+        }
+
+        /* Green line at the bottom */
+        tr:last-child td {
+            border-bottom: 3px solid #2e7d32;
+        }
+
+        /Rounded corners for the first row and last row/
+        tr:first-child th:first-child {
+            border-top-left-radius: 10px;
+        }
+        tr:first-child th:last-child {
+            border-top-right-radius: 10px;
+        }
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+        tr:last-child td:last-child {
+            border-bottom-right-radius:10px;
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">HTML TABLES</h2>
+<table>
+    <tr class="kk">
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Points</th>
+        <th>Team</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>GRACE</td>
+        <td>59</td>
+        <td>ARSENAL</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>JUSTUS</td>
+        <td>89</td>
+        <td>CHELSEA</td>
+    </tr>
+    <tr class="kk">
+        <td>3</td>
+        <td>MOSES</td>
+        <td>50</td>
+        <td>MANU</td>
+    </tr>
+    <tr id="one">
+        <td>4</td>
+        <td>SAMUEL</td>
+        <td>20</td>
+        <td>MANCITY</td>
+    </tr>
+
+
+</table>
+
+
+</body>
+</html>
